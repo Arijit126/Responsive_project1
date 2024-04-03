@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:OpenSans;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   background-image: url(Jacket.jpg);
+   background-size: cover;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:20px;
+    padding-right: 30px;
+    color: rgb(255, 255, 255);
+}
+#nav h4{
+    font-size: 17px;
+}
+#nav h4:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+#nav i{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+}
+#nav i:hover{
+    cursor: pointer;
+}
+#center{
+    width: 100%;
+    padding: 30px 65px;
+}
+#center h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 65px;
+    color: rgb(255, 255, 255);
+}
+#center-in{
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+.elem{
+    padding: 8px;
+    margin: 10px;
+    border-top: 2px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.elem i{
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem:hover i{
+     opacity: 2;
+     color: rgb(255, 255, 255);
+}
+.elem:hover a{
+    text-decoration: underline;
+}
+#right{
+    width: 30%;
+}
+@media (max-width:600px) {
+    #main{
+       background-image: url(Jacket.jpg);
+       background-size: cover;
+       background-position: bottom;
+       background-repeat: no-repeat;
+    }
+    #nav{
+        height: 50px;
+        width: 100%;
+        gap:20px;
+        padding-right: 20px;
+    }
+    #nav h4{
+        font-size: 14px;
+    }
+    #nav h4:hover{
+       text-decoration: underline;
+       cursor: pointer;
+    }
+    #nav i{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    #nav i:hover{
+        cursor: pointer;
+    }
+    #center{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    #center h1{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 50px;
+        color: rgb(255, 255, 255);
+        margin-top: 155px;
+    }
+    #center-in{
+        height: 100px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    #center-in p{
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+    }
+    .elem{
+        padding: 8px;
+        margin: 15px;
+        border-top: 2px solid rgb(255, 255, 255);
+    }
+    .elem a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .elem i{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #right{
+        width: 100%;
+    }
+}
